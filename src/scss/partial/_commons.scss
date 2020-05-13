@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+.container_general {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+@mixin my_flex ($justcont,$align){
+    display: flex;
+    justify-content: $justcont;
+    align-items: $align;
+}
+
+@mixin list-style{
+    list-style: none;
+}
+

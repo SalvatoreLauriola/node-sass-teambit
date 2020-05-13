@@ -1,0 +1,40 @@
+.navbar {
+    @include my_flex(space-between, center);
+    padding: 20px 0;
+    border-bottom: 1px solid $line-layout;
+}
+
+.list {
+    @include list-style;
+    @include my_flex(none, center);
+    li {
+        color: $text-color;
+        margin-left: 45px;
+        font-size: 13px;
+        font-weight: $icon-font-weight;
+        cursor: pointer;
+        &:first-child i{
+            margin-left: 5px;
+        } 
+        a {
+            text-decoration:none;
+            color: $btn-color;
+            border: 1px solid $btn-color;
+            border-radius: 6px;
+            @include my_flex(none ,center);
+            padding: 8px;
+            font-weight: $icon-font-weight;
+            font-size: 13px;
+            &:hover{
+                background-color: $btn-color;
+                color: white;
+            }
+            img {
+                width: 18px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

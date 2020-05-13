@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container_general {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdb5af;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+
+.list li {
+  color: #58402C;
+  margin-left: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list li:first-child i {
+  margin-left: 5px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #2E4691;
+  border: 1px solid #2E4691;
+  border-radius: 6px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.list li a:hover {
+  background-color: #2E4691;
+  color: white;
+}
+
+.list li a img {
+  width: 18px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+}
+
+.jumbotron .jumbotron-sx {
+  width: 50%;
+}
+
+.jumbotron .jumbotron-dx {
+  width: 50%;
+}
+
+

@@ -1,0 +1,9 @@
+.jumbotron {
+    @include my_flex(none,none);
+    .jumbotron-sx{
+        width: 50%;
+    }
+    .jumbotron-dx{
+        width: 50%;
+    }
+}
