@@ -1,6 +1,6 @@
 .orange_section {
     background-color: #FFE7D2;
-    padding: 50px;
+    padding-top: 50px;
     .size {
         @include my_flex(none, center);
         flex-direction:column;

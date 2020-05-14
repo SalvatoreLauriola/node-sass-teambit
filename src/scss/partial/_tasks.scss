@@ -1,0 +1,41 @@
+.flex_row {
+    @include my_flex(flex-start,flex-start);
+    .picture{
+        width: 50%;
+        @include my_flex(flex-end, none);
+        img {
+            max-width: 768px;
+        }
+    }
+    .text{
+        width: 50%;
+        .layout_settings {
+            width: 62%;
+            @include my_flex(none,center);
+            flex-direction: column;
+            h4 {
+                @include font-style(22px, $text-color);
+                
+            }
+            p {
+                    @include font-style(20px, $text-color);
+                    
+                    line-height: 30px;
+                    margin-bottom: 30px;
+
+                }
+                a {
+                    text-decoration: none;
+                    color: $btn_color;
+                    display: block;
+                    margin-top: 30px;
+                }
+            img {
+                max-width: 270px;
+                display: block;
+                
+            }
+        }
+        
+    }
+}

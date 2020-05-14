@@ -141,7 +141,7 @@ body {
 
 .orange_section {
   background-color: #FFE7D2;
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .orange_section .size {
@@ -210,6 +210,59 @@ body {
   font-size: 18px;
   color: #58402C;
   line-height: 30px;
+}
+
+.flex_row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex_row .picture {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: none;
+}
+
+.flex_row .picture img {
+  max-width: 768px;
+}
+
+.flex_row .text {
+  width: 50%;
+}
+
+.flex_row .text .layout_settings {
+  width: 62%;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex_row .text .layout_settings h4 {
+  font-size: 22px;
+  color: #58402C;
+}
+
+.flex_row .text .layout_settings p {
+  font-size: 20px;
+  color: #58402C;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.flex_row .text .layout_settings a {
+  text-decoration: none;
+  color: #2E4691;
+  display: block;
+  margin-top: 30px;
+}
+
+.flex_row .text .layout_settings img {
+  max-width: 270px;
+  display: block;
 }
 
 
