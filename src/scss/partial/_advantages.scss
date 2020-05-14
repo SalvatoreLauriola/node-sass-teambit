@@ -1,0 +1,63 @@
+.orange_section {
+    background-color: #FFE7D2;
+    padding: 50px;
+    .size {
+        @include my_flex(none, center);
+        flex-direction:column;
+        border-bottom: 1px solid $line-layout;
+        padding-bottom: 100px;
+        & > img {
+            max-width: 280px;
+            margin-top: 90px;
+        }
+        h2 {
+            @include font-style(25px, $text-color);
+            margin: 40px;
+        }
+        .text_advantages {
+            width: 800px;
+            text-align: center;
+        }
+        &:last-child{
+            border-bottom: none;
+            padding-top: 80px;
+            .imgs_up {
+                .img_settings {
+                    &:nth-child(2){
+                        p {
+                            width:80%;
+                        }
+                    } 
+                    
+                }
+            }
+        }
+        h4 {
+            @include font-style(25px, $text-color);
+            margin-top: 90px;
+        }
+    }
+    .imgs_up{
+        @include my_flex(flex-start,flex-start);
+        
+        .img_settings{
+            @include my_flex(none,center);
+            flex-direction: column;
+            text-align: center;
+            width: calc(100% / 3);
+            img {
+                max-width: 140px;
+                height: 105px;
+                margin-bottom: 25px;
+            
+            }
+            p {
+                width: 65%;
+                @include font-style(18px, $text-color);
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
