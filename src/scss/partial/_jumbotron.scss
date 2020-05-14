@@ -1,9 +1,54 @@
 .jumbotron {
     @include my_flex(none,none);
-    .jumbotron-sx{
+    margin: 100px 0;
+    .jumbo-sx{
         width: 50%;
+        padding-right: 50px;
+        h1 {
+            @include font-style(45px, $text-color);
+            line-height: 70px;
+        }
+        p {
+            @include font-style(20px, $text-color);
+            margin: 40px 0;
+            margin-right: 70px;
+            line-height: 30px;
+        }
+        .buttons_jumbotron {
+            @include my_flex(none,center);
+            margin-bottom: 18px;
+            .button {
+                border: 1px solid $btn-color;
+                border-radius: 6px;
+                @include my_flex(none ,center);
+                padding: 8px 16px;
+                font-weight: $icon-font-weight;
+                font-size: 13px;
+                background-color: $btn-color;
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    background-color: #233569;
+                }
+                img {
+                    width: 18px;
+                    margin-right: 5px;
+                }
+            }
+            span {
+                margin: 0px 16px;
+                color: $line-layout
+            }
+        }
+        a {
+            @include text-deco;
+            @include font-style(13px, $text-color);
+        }
     }
-    .jumbotron-dx{
+    .jumbo-dx{
         width: 50%;
+        img {
+            width: 100%;
+        }
     }
 }
